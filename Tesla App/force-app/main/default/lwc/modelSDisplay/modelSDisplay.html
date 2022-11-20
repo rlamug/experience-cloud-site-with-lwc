@@ -1,0 +1,52 @@
+<template>
+  <div
+    class="slds-grid slds-wrap slds-text-align_center slds-grid_vertical-stretch"
+    style={backgroundImage}
+  >
+    <!-- Tesla Model Name -->
+    <div
+      class="slds-col slds-grid slds-wrap slds-size_1-of-1 slds-grid_vertical-align-center"
+    >
+      <h1 class="slds-col slds-size_1-of-1 slds-text-heading_large">Model S</h1>
+      <h3 class="slds-col slds-size_1-of-1 slds-text-heading_small">Plaid</h3>
+    </div>
+
+    <!-- Car Details and Order Now Button -->
+    <div
+      class="slds-col slds-grid slds-wrap slds-size_1-of-1 slds-grid_vertical-align-end slds-p-bottom_x-large"
+    >
+      <!-- Range -->
+      <div class="slds-col">
+        <h1 class="slds-text-heading_large">396 mi</h1>
+        <h3 class="slds-text-heading_small">Range (EPA est.)</h3>
+      </div>
+
+      <!-- 0-60 mph -->
+      <div class="slds-col">
+        <h1 class="slds-text-heading_large">1.99 s</h1>
+        <h3 class="slds-text-heading_small">0-60 mph*</h3>
+      </div>
+
+      <!-- Top Speed -->
+      <div class="slds-col">
+        <h1 class="slds-text-heading_large">200 mph</h1>
+        <h3 class="slds-text-heading_small">Top Speed†</h3>
+      </div>
+
+      <!-- Peak Power -->
+      <div class="slds-col">
+        <h1 class="slds-text-heading_large">1,020 hp</h1>
+        <h3 class="slds-text-heading_small">Peak Power</h3>
+      </div>
+
+      <!-- Order Now Button-->
+      <div class="slds-col">
+        <lightning-button
+          label="Order Now"
+          onclick={navigateToDesignPage}
+          class="slds-m-left_x-small"
+        ></lightning-button>
+      </div>
+    </div>
+  </div>
+</template>
